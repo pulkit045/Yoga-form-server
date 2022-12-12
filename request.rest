@@ -1,0 +1,43 @@
+GET http://localhost:8000/api/users
+
+###
+
+GET http://localhost:8000/api/forms
+
+###
+
+POST http://localhost:8000/api/signup
+Content-Type: application/json
+
+{
+    "username": "shivam1",
+    "password": "123"
+}
+
+###
+
+POST http://localhost:8000/api/login
+Content-Type: application/json
+
+{
+    "username": "shivam1",
+    "password": "123"
+}
+
+###
+
+POST  http://localhost:8000/api/yoga-form
+Content-Type: application/json
+
+{   
+    "username": "shivam1",
+    "name": "shivam",
+    "phone": "1234567899",
+    "age": "19",
+    "batch": "2"
+}
+
+###
+
+GET http://localhost:8000/api/user-detail?username=shivam1
+
